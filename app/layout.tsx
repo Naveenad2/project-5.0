@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { signInAnonymously, onAuthStateChanged } from "firebase/auth";
-import { auth } from "@/lib/firebase";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
