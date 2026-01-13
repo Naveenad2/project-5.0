@@ -10,14 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   useEffect(() => {
     // 1. Check if user is already signed in
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        console.log("User is securely signed in:", user.uid);
-      } else {
-        // 2. If not, sign them in silently
-        signInAnonymously(auth).catch((error) => {
-          console.error("Auth Failed", error);
-        });
+   console.log("");
       }
     });
 
